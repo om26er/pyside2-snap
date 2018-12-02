@@ -1,5 +1,6 @@
 name: pyside2
-version: '5.11.2'
+version: 'latest'
+version-script: wget -qO- https://pypi.python.org/pypi/pyside2/json | jq .info.version | sed -e 's/^"//' -e 's/"$//'
 summary: Qt for Python (Technology Preview) - Unofficial
 description: |
   The Qt for Python product enables the use of Qt5 APIs in Python applications.
@@ -29,6 +30,8 @@ parts:
       rm -r ${SNAPCRAFT_PART_INSTALL}/pyside/PySide2/examples
     build-packages:
       - python3-pip
+      - wget
+      - jq
     stage-packages:
       - libnss3
       - libxcomposite1
