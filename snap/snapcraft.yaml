@@ -1,8 +1,10 @@
 name: pyside2
 version: '5.11.2'
-summary: Qt for Python
+summary: Qt for Python (Technology Preview) - Unofficial
 description: |
-  TBD
+  The Qt for Python product enables the use of Qt5 APIs in Python applications.
+  It lets Python developers utilize the full potential of Qt, using the PySide2 module.
+  The PySide2 module provides access to the individual Qt modules such as QtCore, QtGui, and so on.
 
 grade: devel
 confinement: strict
