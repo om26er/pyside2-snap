@@ -17,7 +17,7 @@ slots:
   pyside2:
     interface: content
     read:
-      - $SNAP/pyside
+      - $SNAP
 
 parts:
   pyside2:
@@ -41,7 +41,17 @@ parts:
       - libasound2
       - libglu1-mesa
       - libgles2-mesa
+      - fontconfig
       - libxkbcommon0
+      - ttf-ubuntu-font-family
+      - dmz-cursor-theme
+      - light-themes
+      - adwaita-icon-theme
+      - gnome-themes-standard
       - shared-mime-info
       - libgdk-pixbuf2.0-0
+      - locales-all
       - libxslt1.1
+      - fonts-dejavu-core
+      - xfonts-base
+      - xfonts-scalable
