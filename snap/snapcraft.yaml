@@ -7,7 +7,7 @@ description: |
   It lets Python developers utilize the full potential of Qt, using the PySide2 module.
   The PySide2 module provides access to the individual Qt modules such as QtCore, QtGui, and so on.
 
-grade: devel
+grade: stable
 confinement: strict
 
 architectures:
