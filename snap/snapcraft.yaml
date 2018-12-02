@@ -1,0 +1,39 @@
+name: pyside2
+version: '0.1'
+summary: Qt for Python
+description: |
+  TBD
+
+grade: devel
+confinement: strict
+
+slots:
+  pyside2:
+    interface: content
+    read:
+      - $SNAP/pyside
+
+parts:
+  pyside2:
+    plugin: nil
+    override-build: |
+      snapcraftctl build
+      mkdir -p ${SNAPCRAFT_PART_INSTALL}/pyside
+      echo "Get latest release..."
+      pip3 install --no-cache-dir pyside2 -t ${SNAPCRAFT_PART_INSTALL}/pyside
+      rm -r ${SNAPCRAFT_PART_INSTALL}/pyside/PySide2/examples
+    build-packages:
+      - python3-pip
+    stage-packages:
+      - libnss3
+      - libxcomposite1
+      - libxcursor1
+      - libxtst6
+      - libxrandr2
+      - libasound2
+      - libglu1-mesa
+      - libgles2-mesa
+      - libxkbcommon0
+      - shared-mime-info
+      - libgdk-pixbuf2.0-0
+      - libxslt1.1
