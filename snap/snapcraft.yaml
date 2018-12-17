@@ -1,7 +1,7 @@
 name: pyside2
 version: 'latest'
 version-script: wget -qO- https://pypi.python.org/pypi/pyside2/json | jq .info.version | sed -e 's/^"//' -e 's/"$//'
-summary: Qt for Python (Technology Preview) - Unofficial
+summary: Qt for Python - Unofficial
 description: |
   The Qt for Python product enables the use of Qt5 APIs in Python applications.
   It lets Python developers utilize the full potential of Qt, using the PySide2 module.
