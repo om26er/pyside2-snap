@@ -45,6 +45,8 @@ parts:
       - fontconfig
       - libxkbcommon0
       - libxkbcommon-x11-0
+      - libxi6
+      - libegl1
       - shared-mime-info
       - libgdk-pixbuf2.0-0
       - locales-all
