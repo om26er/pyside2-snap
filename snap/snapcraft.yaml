@@ -44,15 +44,10 @@ parts:
       - libgles2-mesa
       - fontconfig
       - libxkbcommon0
-      - ttf-ubuntu-font-family
-      - dmz-cursor-theme
-      - light-themes
-      - adwaita-icon-theme
-      - gnome-themes-standard
+      - libxkbcommon-x11-0
       - shared-mime-info
       - libgdk-pixbuf2.0-0
       - locales-all
       - libxslt1.1
-      - fonts-dejavu-core
       - xfonts-base
       - xfonts-scalable
